@@ -40,18 +40,13 @@ The main topics covered in this repository include:
 
 ---
 
-## 📂 Repository Structure
-
-The repository may evolve over time, but it is intended to include materials such as:
-
-- SQL queries and scripts
-- R notebooks and analysis files
-- Python support scripts
-- Tableau dashboards and visual assets
-- project documentation and notes
+## Project list
+| Project | Topic | Techniques | Status | Project's guide |
+|--------|-------|------------|--------|----------|
+|   |    |    |   |   |
+|   |    |    |   |   |
 
 ---
-
 ## 🚀 Project Goal
 
 The goal of this repository is to provide a structured space where data projects can be explored, improved, and shared in a clear and practical way.
@@ -63,15 +58,5 @@ It also serves as a personal portfolio to highlight skills in:
 - predictive modeling;
 - data storytelling and visualization.
 
----
-
-## 📈 Focus Areas
-
-This repository reflects practical work in:
-
-- data exploration;
-- machine learning workflows;
-- model evaluation;
-- dashboard creation;
-- reproducible analytical projects.
+ 
 
