@@ -135,7 +135,7 @@ the average level of variables such as triglycerides, stress level, and similar 
 
 One example of analysis is to study how many diabetic patients over 50 show a risk of heart attack.
 
-Diabetes Distribution in the Over_50 Population
+### Diabetes Distribution in the Over_50 Population
 
 To determine how many men and women over 50 have or do not have diabetes, the following query was used:
 ```sql
