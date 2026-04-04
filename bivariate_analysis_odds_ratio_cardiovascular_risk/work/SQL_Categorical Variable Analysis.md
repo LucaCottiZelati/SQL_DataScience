@@ -201,3 +201,15 @@ Once again, the percentages are quite similar between the two genders. In partic
 
 27.86% of diabetic men over 50 present heart attack risk;
 26.42% of diabetic women over 50 present heart attack risk.
+
+---
+
+### Final Considerations
+
+This first analysis shows that:
+
+- the dataset population is slightly skewed toward males;
+- mean and median age are very close, suggesting a fairly regular age distribution;
+- the population can be divided almost evenly into Under_50 and Over_50 groups;
+- among Over_50 subjects, diabetes prevalence is very similar for men and women;
+- the proportion of diabetic subjects with heart attack risk is also comparable across genders
