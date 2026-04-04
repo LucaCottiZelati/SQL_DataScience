@@ -8,7 +8,7 @@ To calculate the **odds ratio (OR)** more easily for each categorical variable, 
 - **d** = number of subjects without the condition and without risk  
 
 The formula is:(a × d)/(b × c)
- '''sql
+ ```sql
 SELECT 'Diabetes' as 'variabile', a, b, c, d, ROUND((a * d) / (b *
             c), 3) AS odds_ratio FROM ( SELECT SUM(CASE WHEN Diabetes = 1 AND
             Heart_Attack_Risk = 1 THEN 1 ELSE 0 END) AS a, SUM(CASE WHEN
@@ -80,4 +80,4 @@ SELECT 'Diabetes' as 'variabile', a, b, c, d, ROUND((a * d) / (b *
             Heart_Attack_Risk = 1 THEN 1 ELSE 0 END) AS c, SUM(CASE WHEN
             Healthcare_Access = 0 AND Heart_Attack_Risk = 0 THEN 1 ELSE 0 END)
             AS d FROM database_1.heart_attack_prediction_india_ag ) AS sub
-            '''
+            ```
