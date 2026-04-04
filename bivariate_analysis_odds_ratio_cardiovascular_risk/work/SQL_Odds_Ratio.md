@@ -7,8 +7,77 @@ To calculate the **odds ratio (OR)** more easily for each categorical variable, 
 - **c** = number of subjects without the condition and with risk  
 - **d** = number of subjects without the condition and without risk  
 
-The formula is:
-
-\[
-OR = \frac{a \times d}{b \times c}
-\]
+The formula is:(a × d)/(b × c)
+ '''sql
+SELECT 'Diabetes' as 'variabile', a, b, c, d, ROUND((a * d) / (b *
+            c), 3) AS odds_ratio FROM ( SELECT SUM(CASE WHEN Diabetes = 1 AND
+            Heart_Attack_Risk = 1 THEN 1 ELSE 0 END) AS a, SUM(CASE WHEN
+            Diabetes = 1 AND Heart_Attack_Risk = 0 THEN 1 ELSE 0 END) AS b,
+            SUM(CASE WHEN Diabetes = 0 AND Heart_Attack_Risk = 1 THEN 1 ELSE 0
+            END) AS c, SUM(CASE WHEN Diabetes = 0 AND Heart_Attack_Risk = 0 THEN
+            1 ELSE 0 END) AS d FROM database_1.heart_attack_prediction_india_ag
+            ) AS sub union SELECT 'Hypertension' as 'variabile', a, b, c, d,
+            ROUND((a * d) / (b * c), 3) AS odds_ratio FROM ( SELECT SUM(CASE
+            WHEN Hypertension = 1 AND Heart_Attack_Risk = 1 THEN 1 ELSE 0 END)
+            AS a, SUM(CASE WHEN Hypertension = 1 AND Heart_Attack_Risk = 0 THEN
+            1 ELSE 0 END) AS b, SUM(CASE WHEN Hypertension = 0 AND
+            Heart_Attack_Risk = 1 THEN 1 ELSE 0 END) AS c, SUM(CASE WHEN
+            Hypertension = 0 AND Heart_Attack_Risk = 0 THEN 1 ELSE 0 END) AS d
+            FROM database_1.heart_attack_prediction_india_ag ) AS sub union
+            SELECT 'Physical_Activity' as 'variabile', a, b, c, d, ROUND((a * d)
+            / (b * c), 3) AS odds_ratio FROM ( SELECT SUM(CASE WHEN
+            Physical_Activity = 1 AND Heart_Attack_Risk = 1 THEN 1 ELSE 0 END)
+            AS a, SUM(CASE WHEN Physical_Activity = 1 AND Heart_Attack_Risk = 0
+            THEN 1 ELSE 0 END) AS b, SUM(CASE WHEN Physical_Activity = 0 AND
+            Heart_Attack_Risk = 1 THEN 1 ELSE 0 END) AS c, SUM(CASE WHEN
+            Physical_Activity = 0 AND Heart_Attack_Risk = 0 THEN 1 ELSE 0 END)
+            AS d FROM database_1.heart_attack_prediction_india_ag ) AS sub union
+            SELECT 'Family_History' as 'variabile', a, b, c, d, ROUND((a * d) /
+            (b * c), 3) AS odds_ratio FROM ( SELECT SUM(CASE WHEN Family_History
+            = 1 AND Heart_Attack_Risk = 1 THEN 1 ELSE 0 END) AS a, SUM(CASE WHEN
+            Family_History = 1 AND Heart_Attack_Risk = 0 THEN 1 ELSE 0 END) AS
+            b, SUM(CASE WHEN Family_History = 0 AND Heart_Attack_Risk = 1 THEN 1
+            ELSE 0 END) AS c, SUM(CASE WHEN Family_History = 0 AND
+            Heart_Attack_Risk = 0 THEN 1 ELSE 0 END) AS d FROM
+            database_1.heart_attack_prediction_india_ag ) AS sub union SELECT
+            'Obesity' as 'variabile', a, b, c, d, ROUND((a * d) / (b * c), 3) AS
+            odds_ratio FROM ( SELECT SUM(CASE WHEN Obesity = 1 AND
+            Heart_Attack_Risk = 1 THEN 1 ELSE 0 END) AS a, SUM(CASE WHEN Obesity
+            = 1 AND Heart_Attack_Risk = 0 THEN 1 ELSE 0 END) AS b, SUM(CASE WHEN
+            Obesity = 0 AND Heart_Attack_Risk = 1 THEN 1 ELSE 0 END) AS c,
+            SUM(CASE WHEN Obesity = 0 AND Heart_Attack_Risk = 0 THEN 1 ELSE 0
+            END) AS d FROM database_1.heart_attack_prediction_india_ag ) AS sub
+            union SELECT 'Alcohol_Consumption' as 'variabile', a, b, c, d,
+            ROUND((a * d) / (b * c), 3) AS odds_ratio FROM ( SELECT SUM(CASE
+            WHEN Alcohol_Consumption = 1 AND Heart_Attack_Risk = 1 THEN 1 ELSE 0
+            END) AS a, SUM(CASE WHEN Alcohol_Consumption = 1 AND
+            Heart_Attack_Risk = 0 THEN 1 ELSE 0 END) AS b, SUM(CASE WHEN
+            Alcohol_Consumption = 0 AND Heart_Attack_Risk = 1 THEN 1 ELSE 0 END)
+            AS c, SUM(CASE WHEN Alcohol_Consumption = 0 AND Heart_Attack_Risk =
+            0 THEN 1 ELSE 0 END) AS d FROM
+            database_1.heart_attack_prediction_india_ag ) AS sub union SELECT
+            'Air_Pollution_Exposure' as 'variabile', a, b, c, d, ROUND((a * d) /
+            (b * c), 3) AS odds_ratio FROM ( SELECT SUM(CASE WHEN
+            Air_Pollution_Exposure = 1 AND Heart_Attack_Risk = 1 THEN 1 ELSE 0
+            END) AS a, SUM(CASE WHEN Air_Pollution_Exposure = 1 AND
+            Heart_Attack_Risk = 0 THEN 1 ELSE 0 END) AS b, SUM(CASE WHEN
+            Air_Pollution_Exposure = 0 AND Heart_Attack_Risk = 1 THEN 1 ELSE 0
+            END) AS c, SUM(CASE WHEN Air_Pollution_Exposure = 0 AND
+            Heart_Attack_Risk = 0 THEN 1 ELSE 0 END) AS d FROM
+            database_1.heart_attack_prediction_india_ag ) AS sub union SELECT
+            'Smoking' as 'variabile', a, b, c, d, ROUND((a * d) / (b * c), 3) AS
+            odds_ratio FROM ( SELECT SUM(CASE WHEN Smoking = 1 AND
+            Heart_Attack_Risk = 1 THEN 1 ELSE 0 END) AS a, SUM(CASE WHEN Smoking
+            = 1 AND Heart_Attack_Risk = 0 THEN 1 ELSE 0 END) AS b, SUM(CASE WHEN
+            Smoking = 0 AND Heart_Attack_Risk = 1 THEN 1 ELSE 0 END) AS c,
+            SUM(CASE WHEN Smoking = 0 AND Heart_Attack_Risk = 0 THEN 1 ELSE 0
+            END) AS d FROM database_1.heart_attack_prediction_india_ag ) AS sub
+            union SELECT 'Healthcare_Access' as 'variabile', a, b, c, d,
+            ROUND((a * d) / (b * c), 3) AS odds_ratio FROM ( SELECT SUM(CASE
+            WHEN Healthcare_Access = 1 AND Heart_Attack_Risk = 1 THEN 1 ELSE 0
+            END) AS a, SUM(CASE WHEN Healthcare_Access = 1 AND Heart_Attack_Risk
+            = 0 THEN 1 ELSE 0 END) AS b, SUM(CASE WHEN Healthcare_Access = 0 AND
+            Heart_Attack_Risk = 1 THEN 1 ELSE 0 END) AS c, SUM(CASE WHEN
+            Healthcare_Access = 0 AND Heart_Attack_Risk = 0 THEN 1 ELSE 0 END)
+            AS d FROM database_1.heart_attack_prediction_india_ag ) AS sub
+            '''
