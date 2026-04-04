@@ -81,3 +81,18 @@ SELECT 'Diabetes' as 'variabile', a, b, c, d, ROUND((a * d) / (b *
             Healthcare_Access = 0 AND Heart_Attack_Risk = 0 THEN 1 ELSE 0 END)
             AS d FROM database_1.heart_attack_prediction_india_ag ) AS sub
             ```
+
+| Variable Considered       | a    | b    | c    | d    | Odds Ratio |
+|---------------------------|-----:|-----:|-----:|-----:|-----------:|
+| Physical_Activity         | 1805 | 4153 | 1202 | 2840 | 1.027      |
+| Family_History            | 939  | 2174 | 2068 | 4819 | 1.006      |
+| Hypertension              | 740  | 1729 | 2267 | 5264 | 0.994      |
+| Obesity                   | 909  | 2128 | 2098 | 4865 | 0.991      |
+| Air_Pollution_Exposure    | 1199 | 2837 | 1808 | 4156 | 0.971      |
+| Healthcare_Access         | 910  | 2200 | 2097 | 4793 | 0.945      |
+| Smoking                   | 880  | 2134 | 2127 | 4859 | 0.942      |
+| Diabetes                  | 267  | 662  | 2740 | 6331 | 0.932      |
+| Alcohol_Consumption       | 1023 | 2505 | 1984 | 4488 | 0.924      |
+
+The odds ratio is almost always close to 1.  
+Therefore, no clear association emerges from this analysis.
