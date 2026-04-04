@@ -101,3 +101,24 @@ FROM database_1.heart_attack_prediction_india_ag
 where age_group='Over_50' and Healthcare_Access=1 
 GROUP BY Healthcare_Access, Gender 
 ```
+
+| Variable Considered        | Gender | Number of Subjects | Total at Risk | Risk Percentage |
+|---------------------------|--------|-------------------:|--------------:|----------------:|
+| Diabetes                  | Male   | 277                | 88            | 31.77           |
+| Obesity                   | Male   | 867                | 270           | 31.14           |
+| Hypertension              | Male   | 681                | 209           | 30.69           |
+| Family_History            | Female | 686                | 208           | 30.32           |
+| Healthcare_Access         | Female | 686                | 203           | 29.59           |
+| Physical_Activity         | Male   | 1098               | 321           | 29.23           |
+| Family_History            | Male   | 883                | 257           | 29.11           |
+| Air_Pollution_Exposure    | Male   | 1149               | 334           | 29.07           |
+| Air_Pollution_Exposure    | Female | 868                | 252           | 29.03           |
+| Obesity                   | Female | 717                | 208           | 29.01           |
+| Alcohol_Consumption       | Male   | 988                | 285           | 28.85           |
+| Smoking                   | Male   | 862                | 245           | 28.42           |
+| Smoking                   | Female | 688                | 194           | 28.20           |
+| Diabetes                  | Female | 178                | 50            | 28.09           |
+| Healthcare_Access         | Male   | 897                | 252           | 28.09           |
+| Alcohol_Consumption       | Female | 807                | 226           | 28.00           |
+| Hypertension              | Female | 573                | 160           | 27.92           |
+| Physical_Activity         | Female | 946                | 255           | 26.96           |
