@@ -185,4 +185,4 @@ Based on the provided dataset, the highest heart attack risk appears to be assoc
 
 However, the analysis of the ratios does not show one association that is clearly much stronger than the others.
 
-A possible next step would be to use the **odds ratio (OR)** in order to determine whether one of these variables is more strongly associated with heart attack risk.
+A possible next step would be to use the **odds ratio (OR)** in order to determine whether one of these variables is more strongly associated with heart attack risk. View SQL_Odds_Ratio file.
