@@ -25,21 +25,6 @@ Inside this repository, you will find materials related to:
 
 ---
 
-## 📌 Main Topics
-
-The main topics covered in this repository include:
-
-- exploratory data analysis;
-- bivariate analysis and the study of relationships between variables;
-- predictive model development;
-- univariate and multivariate logistic regression;
-- model comparison through performance metrics;
-- use of algorithms such as **Random Forest** and **XGBoost**;
-- feature engineering;
-- development of interactive dashboards.
-
----
-
 ## Project list
 | Project | Topic | Techniques | Status | Project's guide |
 |--------|-------|------------|--------|----------|
