@@ -28,7 +28,7 @@ Inside this repository, you will find materials related to:
 ## Project list
 | Project | Topic | Techniques | Status | Project's guide |
 |--------|-------|------------|--------|----------|
-|   |    |    |   |   |
+| bivariate analysis odds ratio cardiovascular risk  |  Statistical analysis of cardiovascular risk through bivariate methods and odds ratio estimation  |  SQL  |   |   |
 |   |    |    |   |   |
 
 ---
