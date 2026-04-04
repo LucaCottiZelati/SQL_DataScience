@@ -32,16 +32,13 @@ Inside this repository, you will find materials related to:
 |   |    |    |   |   |
 
 ---
-## 🚀 Project Goal
+## 🚀 Repository structure
+Each project is stored in its own folder and includes:
 
-The goal of this repository is to provide a structured space where data projects can be explored, improved, and shared in a clear and practical way.
-
-It also serves as a personal portfolio to highlight skills in:
-
-- data extraction and transformation;
-- statistical analysis;
-- predictive modeling;
-- data storytelling and visualization.
+data/ (dataset)
+work/ (working Excel files)
+Guide.md (steps, assumptions, metrics)
+Results.md (final results)
 
  
 
