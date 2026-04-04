@@ -41,6 +41,7 @@ LIMIT 3;
 |   202 |  32 |
 |   194 |  35 |
 |   190 |  67 |
+
 The most represented ages in the sample are therefore 32, 35, and 67 years.
 ---
 ### Mean and Median Age
