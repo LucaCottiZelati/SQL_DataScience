@@ -33,7 +33,6 @@ Inside this repository, you will find materials related to:
 
 ---
 ## 🚀 Repository structure
-Each project is stored in its own folder and includes:
 - `data/` (dataset)
 - `work/` (Technical files)
 - `Guide.md` (steps, assumptions, metrics)
