@@ -1,26 +1,77 @@
-# SQL_DataScience
+# 📊 SQL and DataScience Portfolio
 
-Questo repository nasce con l’intento di:
-- documentare workflow di analisi dei dati;
-- organizzare script, query, notebook e materiali di supporto;
-- mostrare un percorso di studio e applicazione tra **SQL**, **R**, **Python** e **Tableau**.
+Welcome to **SQL_DataScience**, a repository created to collect and document projects, workflows, and tools related to data analysis and data science.
 
-## Contenuti
+---
 
-All’interno di questo repository troverai materiali legati a:
-- **SQL** per interrogazione, estrazione e preparazione dei dati;
-- **R** per analisi statistica, modellazione predittiva e valutazione dei risultati;
-- **Python** come supporto e integrazione all’analisi dei dati;
-- **Tableau** per dashboard e visualizzazione dei dati.
+## 🎯 Purpose
 
-## Temi principali
+This repository was created with the aim of:
 
-Tra gli argomenti trattati nel repository:
-- analisi esplorativa dei dati;
-- analisi bivariata e studio delle relazioni tra variabili;
-- costruzione di modelli predittivi;
-- regressione logistica univariata e multivariata;
-- confronto tra modelli tramite metriche di performance;
-- utilizzo di algoritmi come **Random Forest** e **XGBoost**;
+- documenting **data analysis workflows**;
+- organizing **scripts, queries, notebooks, and supporting materials**;
+- showcasing a learning and application journey across **SQL**, **R**, **Python**, and **Tableau**.
+
+---
+
+## 🧰 Tools & Technologies
+
+Inside this repository, you will find materials related to:
+
+- **SQL** — for data querying, extraction, and preparation;
+- **R** — for statistical analysis, predictive modeling, and performance evaluation;
+- **Python** — as a support tool and integration for data analysis;
+- **Tableau** — for dashboards and data visualization.
+
+---
+
+## 📌 Main Topics
+
+The main topics covered in this repository include:
+
+- exploratory data analysis;
+- bivariate analysis and the study of relationships between variables;
+- predictive model development;
+- univariate and multivariate logistic regression;
+- model comparison through performance metrics;
+- use of algorithms such as **Random Forest** and **XGBoost**;
 - feature engineering;
-- realizzazione di dashboard interattive.
+- development of interactive dashboards.
+
+---
+
+## 📂 Repository Structure
+
+The repository may evolve over time, but it is intended to include materials such as:
+
+- SQL queries and scripts
+- R notebooks and analysis files
+- Python support scripts
+- Tableau dashboards and visual assets
+- project documentation and notes
+
+---
+
+## 🚀 Project Goal
+
+The goal of this repository is to provide a structured space where data projects can be explored, improved, and shared in a clear and practical way.
+
+It also serves as a personal portfolio to highlight skills in:
+
+- data extraction and transformation;
+- statistical analysis;
+- predictive modeling;
+- data storytelling and visualization.
+
+---
+
+## 📈 Focus Areas
+
+This repository reflects practical work in:
+
+- data exploration;
+- machine learning workflows;
+- model evaluation;
+- dashboard creation;
+- reproducible analytical projects.
+
