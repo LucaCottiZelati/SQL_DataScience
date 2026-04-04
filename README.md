@@ -39,5 +39,9 @@ Each project is stored in its own folder and includes:
 - `Guide.md` (steps, assumptions, metrics)
 - `Results.md` (final results)
 
+---
+## Dataset notes
+All analyzed datasets are public.  
+
  
 
