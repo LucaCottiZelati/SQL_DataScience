@@ -13,7 +13,8 @@ SELECT COUNT(*) AS conteggio, gender
 FROM database_1.heart_attack_prediction_india
 GROUP BY gender
 ORDER BY conteggio DESC;
-sql```
+```
+
 
 | Count | Gender |
 | ----: | ------ |
@@ -33,6 +34,7 @@ FROM database_1.heart_attack_prediction_india
 GROUP BY age
 ORDER BY conteggio DESC
 LIMIT 3;
+```
 
 | Count | Age |
 | ----: | --: |
@@ -65,6 +67,7 @@ limits AS (
 SELECT ROUND(AVG(age), 1) AS median
 FROM median_rows, limits
 WHERE row_num BETWEEN start_row AND end_row;
+```
 
 | Median |
 | -----: |
@@ -73,6 +76,7 @@ WHERE row_num BETWEEN start_row AND end_row;
 ```sql
 SELECT AVG(age) AS mean
 FROM database_1.heart_attack_prediction_india;
+```
 
 | Mean |
 | ---: |
@@ -102,6 +106,7 @@ SELECT COUNT(*) AS conteggio, age_group
 FROM tabella_age_group
 GROUP BY age_group
 ORDER BY conteggio DESC;
+```
 
 | Age_group | Count |
 | --------- | ----: |
@@ -119,3 +124,4 @@ SELECT *,
            ELSE 'Under_50'
        END AS age_group
 FROM database_1.heart_attack_prediction_india;
+```
