@@ -5,7 +5,7 @@ We divide the cases into two parts:
 - analysis of the **Over_50** population
 - analysis of the **Under_50** population
 
-### Analysis of the Over_50 Population
+### 1. Analysis of the Over_50 Population
 
 ```sql
 SELECT 'Diabetes' as 'Variabile_considerata', 
