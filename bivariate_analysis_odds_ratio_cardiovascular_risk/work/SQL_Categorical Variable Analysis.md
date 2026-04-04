@@ -4,7 +4,7 @@
 
 The population analyzed in the `heart_attack_prediction_india` dataset is composed mainly of male subjects rather than female subjects.
 
-### Distribution by Gender
+### 1. Distribution by Gender
 
 To examine the gender composition of the population, the following query was used:
 
@@ -24,7 +24,7 @@ ORDER BY conteggio DESC;
 This result shows a slight predominance of male subjects in the study population.
 
 ---
-### Age Distribution
+### 2. Age Distribution
 
 The population is also distributed across a wide range of ages. To identify the most frequent ages in the dataset, the following query was executed:
 
@@ -44,7 +44,7 @@ LIMIT 3;
 
 The most represented ages in the sample are therefore 32, 35, and 67 years.
 ---
-### Mean and Median Age
+### 3. Mean and Median Age
 
 To better describe the age distribution of the patients, it is useful to compare the mean and the median, since together they provide a clearer view of the central tendency of the distribution.
 
@@ -86,7 +86,7 @@ FROM database_1.heart_attack_prediction_india;
 The comparison between the mean (49.4) and the median (49.0) suggests that the age distribution is fairly balanced, with no strong asymmetry.
 
 ---
-Population Split by Age Group
+### 4. Population Split by Age Group
 
 To simplify the analysis, the population was divided into two age groups:
 
@@ -126,3 +126,42 @@ SELECT *,
        END AS age_group
 FROM database_1.heart_attack_prediction_india;
 ```
+---
+### Case Study: Cardiac Risk in Diabetic Patients Over 50
+Given the structure of the dataset, it is possible to further investigate the number of male and female subjects who present:
+
+the presence or absence of a disease (diabetes, obesity, and so on);
+the average level of variables such as triglycerides, stress level, and similar indicators.
+
+One example of analysis is to study how many diabetic patients over 50 show a risk of heart attack.
+
+Diabetes Distribution in the Over_50 Population
+
+To determine how many men and women over 50 have or do not have diabetes, the following query was used:
+```sql
+SELECT 
+    main.gender,
+    main.Diabetes,
+    COUNT(*) AS conteggio,
+    ROUND(COUNT(*) * 100.0 / gender_total.total, 2) AS percentuale
+FROM database_1.heart_attack_prediction_india_ag AS main
+INNER JOIN (
+    SELECT gender, COUNT(*) AS total
+    FROM database_1.heart_attack_prediction_india_ag
+    WHERE age_group = 'Over_50'
+    GROUP BY gender
+) AS gender_total
+    ON main.gender = gender_total.gender
+WHERE main.age_group = 'Over_50'
+GROUP BY main.gender, main.Diabetes, gender_total.total
+ORDER BY main.gender, main.Diabetes;
+```
+
+| Gender | Diabetes | Count | Percentage |
+| ------ | -------: | ----: | ---------: |
+| Male   |        0 |  2440 |      90.30 |
+| Male   |        1 |   262 |       9.70 |
+| Female |        0 |  2013 |      90.47 |
+| Female |        1 |   212 |       9.53 |
+
+The percentages are very similar for both men and women over 50. In both groups, about 90% of the population does not have diabetes, while about 10% is diabetic.
