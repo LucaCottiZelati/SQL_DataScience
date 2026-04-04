@@ -165,3 +165,39 @@ ORDER BY main.gender, main.Diabetes;
 | Female |        1 |   212 |       9.53 |
 
 The percentages are very similar for both men and women over 50. In both groups, about 90% of the population does not have diabetes, while about 10% is diabetic.
+
+### Heart Attack Risk in Diabetic Patients Over 50
+
+A possible extension of the analysis is to compare diabetes status with the Heart_Attack_Risk variable, in order to observe the proportion of diabetic subjects who present a cardiac risk.
+
+The following query makes it possible to calculate, for each gender, how many diabetic patients over 50 present heart attack risk:
+```sql
+SELECT 
+    main.gender,
+    main.Heart_Attack_Risk,
+    COUNT(*) AS conteggio,
+    ROUND(COUNT(*) * 100.0 / diabetici_per_gender.total_diabetici, 2) AS percentuale
+FROM database_1.heart_attack_prediction_india_ag AS main
+INNER JOIN (
+    SELECT gender, COUNT(*) AS total_diabetici
+    FROM database_1.heart_attack_prediction_india_ag
+    WHERE age_group = 'Over_50'
+      AND Diabetes = 1
+    GROUP BY gender
+) AS diabetici_per_gender
+    ON main.gender = diabetici_per_gender.gender
+WHERE main.age_group = 'Over_50'
+  AND main.Diabetes = 1
+  AND main.Heart_Attack_Risk = 1
+GROUP BY main.gender, main.Heart_Attack_Risk, diabetici_per_gender.total_diabetici
+ORDER BY main.gender;
+```
+| Gender | Heart_Attack_Risk | Count | Percentage |
+| ------ | ----------------: | ----: | ---------: |
+| Male   |                 1 |    73 |      27.86 |
+| Female |                 1 |    56 |      26.42 |
+
+Once again, the percentages are quite similar between the two genders. In particular:
+
+27.86% of diabetic men over 50 present heart attack risk;
+26.42% of diabetic women over 50 present heart attack risk.
