@@ -13,6 +13,7 @@ SELECT COUNT(*) AS conteggio, gender
 FROM database_1.heart_attack_prediction_india
 GROUP BY gender
 ORDER BY conteggio DESC;
+```sql
 
 | Count | Gender |
 | ----: | ------ |
