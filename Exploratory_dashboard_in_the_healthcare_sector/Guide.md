@@ -45,5 +45,10 @@ This dashboard can be useful in contexts such as:
 - business intelligence and data storytelling exercises
 - educational or demonstration presentations based on clinical datasets
 
+# Dashboard
+
+The dashboard is visible online at this link: https://public.tableau.com/app/profile/luca.cotti/viz/Fattoridirischiocardiovascolare/Dashboard2
+it is recommended to use the full-screen view
+
 ### Note
 This dashboard is intended for exploratory and descriptive purposes only. Any patterns highlighted in the charts do not, by themselves, constitute clinical or predictive validation, but rather support dataset interpretation and the identification of trends that may be explored further through statistical analysis or dedicated predictive models.
