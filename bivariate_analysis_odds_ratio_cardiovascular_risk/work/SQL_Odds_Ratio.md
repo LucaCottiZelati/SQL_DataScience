@@ -99,6 +99,6 @@ The odds ratio is almost always close to 1.
 Therefore, no clear association emerges from this analysis.
 
 # Final Odds Ratio chart with gradient:
-<img width="1536" height="1024" alt="Image 6 apr 2026, 22_06_36" src="https://github.com/user-attachments/assets/42f6bb01-03c6-47e3-9b6c-00778dc5bec8" />
+<img width="1536" height="1024" alt="Image 6 apr 2026, 22_12_04" src="https://github.com/user-attachments/assets/5b65f5d5-cea3-425d-b823-4e09a368a89b" />
 
 
