@@ -97,3 +97,8 @@ SELECT 'Diabetes' as 'variabile', a, b, c, d, ROUND((a * d) / (b *
 
 The odds ratio is almost always close to 1.  
 Therefore, no clear association emerges from this analysis.
+
+# Final Odds Ratio chart with gradient:
+<img width="1536" height="1024" alt="Image 6 apr 2026, 22_06_36" src="https://github.com/user-attachments/assets/42f6bb01-03c6-47e3-9b6c-00778dc5bec8" />
+
+
