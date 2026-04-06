@@ -29,7 +29,7 @@ Inside this repository, you will find materials related to:
 | Project | Topic | Techniques | Status | Project's guide |
 |--------|-------|------------|--------|----------|
 | bivariate analysis odds ratio cardiovascular risk  |  Statistical analysis of cardiovascular risk through bivariate methods and odds ratio estimation  |  SQL  | ✅Complete | bivariate_analysis_odds_ratio_cardiovascular_risk/Guide.md  |
-| Building a univariate model  | Building a univariate model to predict cardiac risk  | R   | in progress  |   |
+| Comparison of predictive models and application of feature engineering  | Comparison of predictive models and application of feature engineering to predict cardiac risk  | R   | in progress  |   |
 
 ---
 ## 🚀 Repository structure
