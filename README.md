@@ -30,7 +30,7 @@ Inside this repository, you will find materials related to:
 |--------|-------|------------|--------|----------|
 | bivariate analysis odds ratio cardiovascular risk  |  Statistical analysis of cardiovascular risk through bivariate methods and odds ratio estimation  |  SQL  | ✅Complete | bivariate_analysis_odds_ratio_cardiovascular_risk/Guide.md  |
 | Comparison of predictive models and application of feature engineering  | Comparison of predictive models and application of feature engineering to predict cardiac risk  | R   | in progress  | Comparison_of_predictive_models_and application_of_feature_engineering/Guide.md  |
-| Exploratory dashboard  | Tableau   | in progress  |    |
+| Exploratory dashboard  | Interactive dashboard on cardiovascular risk factors | Tableau  | in progress  |    |
 
 ---
 ## 🚀 Repository structure
