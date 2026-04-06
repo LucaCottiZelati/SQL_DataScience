@@ -48,10 +48,11 @@ This dashboard can be useful in contexts such as:
 ### Interactive Dashboard
 
 The dashboard is visible online at this link: https://public.tableau.com/app/profile/luca.cotti/viz/Fattoridirischiocardiovascolare/Dashboard2
+
 it is recommended to use the full-screen view
 
 ### Dashboard Preview
-<img width="1199" height="1295" alt="Dashboard 2" src="https://github.com/user-attachments/assets/018b8f19-c2fe-42a7-8ec5-5817d549a135" />
+<img width="900" height="800" alt="Dashboard 2" src="https://github.com/user-attachments/assets/018b8f19-c2fe-42a7-8ec5-5817d549a135" />
 
 
 ### Note
