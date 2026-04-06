@@ -52,7 +52,8 @@ The dashboard is visible online at this link: https://public.tableau.com/app/pro
 it is recommended to use the full-screen view
 
 ### Dashboard Preview
-<img width="900" height="800" alt="Dashboard 2" src="https://github.com/user-attachments/assets/018b8f19-c2fe-42a7-8ec5-5817d549a135" />
+![gif_dashboard](https://github.com/user-attachments/assets/65c97095-edb0-4dc9-9966-613e2f74533b)
+
 
 
 ### Note
