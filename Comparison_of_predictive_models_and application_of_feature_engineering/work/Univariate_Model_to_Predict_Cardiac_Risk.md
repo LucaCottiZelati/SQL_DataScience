@@ -219,9 +219,6 @@ By mapping the function over a range that lets us see the classic sigmoid, let u
 ```
 <img width="1363" height="1143" alt="Rplot01" src="https://github.com/user-attachments/assets/728c6252-c5d0-4d0e-8627-53d33e3a4063" />
 
-
-(click on the image to expand it in high definition)
-
 Therefore:
 
 - the LDL value is statistically significant in predicting cardiac risk.
