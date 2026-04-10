@@ -45,6 +45,7 @@ The `"rf_model"` model was built considering all the variables in the dataset (i
 
 We can use `VarImpPlot` to determine which variables were the most influential in splitting the trees in the model:
 
+<img width="864" height="550" alt="Rplot03" src="https://github.com/user-attachments/assets/ef1ae677-548f-4762-844a-0db9c684389b" />
 
 
 For this model, the three most important variables are:
