@@ -217,6 +217,7 @@ By mapping the function over a range that lets us see the classic sigmoid, let u
 +      xlab = "LDL (mg/dL)", ylab = "Probabilità di rischio")
 > abline(h = 0.5, col = "red", lty = 2)  # Soglia del 50%
 ```
+<img width="1363" height="1143" alt="Rplot01" src="https://github.com/user-attachments/assets/728c6252-c5d0-4d0e-8627-53d33e3a4063" />
 
 
 (click on the image to expand it in high definition)
