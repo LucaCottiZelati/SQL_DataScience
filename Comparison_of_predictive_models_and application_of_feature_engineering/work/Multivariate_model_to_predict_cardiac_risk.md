@@ -456,5 +456,3 @@ Given the distribution, we can observe that:
 Therefore I would not proceed with the calculation of the model performance because we are unable to assign high probabilities of risk to patients.
 
 A new multivariate model is needed.
-
-In this post I tried an approach with trees: [Random Forest and XGBoost to predict cardiac risk](https://lucacottizelati.blogspot.com/2025/05/random-forest-per-predire-il-rischio.html)
