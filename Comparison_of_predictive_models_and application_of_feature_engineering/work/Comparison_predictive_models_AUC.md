@@ -193,5 +193,3 @@ So, the following models did not work:
 The issue is not attributable to the algorithms, but rather to the data. Most likely, the data are not very informative.
 
 One possible direction would be to perform feature engineering, that is, constructing new variables that may better predict cardiac risk.
-
-`R`
